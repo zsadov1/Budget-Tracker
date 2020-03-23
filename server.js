@@ -13,7 +13,7 @@ app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("public"));
+app.use(express.static("./public/index.html"));
 
 mongoose.connect("mongodb://localhost/budget", {
   useNewUrlParser: true,
@@ -22,7 +22,6 @@ mongoose.connect("mongodb://localhost/budget", {
 
 // routes
 app.use(require("./routes/api.js"));
-app.use(require("./routes/htmlroute.js"));
 
 
 app.listen(PORT, () => {
