@@ -1,19 +1,28 @@
 # Budget-Tracker
-# Unit 18 PWA Homework: Online/Offline Budget Trackers
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+## Description
 
-The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
+An online/offline Progressive Web App that tracks account balance, withdrawals, and deposits. It can be downloaded and used online or offline due to the inclusion of an app manifest and service worker. Data entered in offline mode is stored client-side in IndexedDB, then stored server-side in MongoDB once online again. The app also uses compression to optimize performance.
 
-Offline Functionality:
+| Technologies used:                                                                         |
+| ------------------------------------------------------------------------------------------ |
+| Node.js, Express, MongoDB, Mongoose, IndexedDB, JavaScript, Chart.js, HTML, CSS, Bootstrap |
 
-  * Enter deposits offline
+## Demo
 
-  * Enter expenses offline
+![Budget Tracker Demo](/public/budget-tracker.gif)
 
-When brought back online:
+## Installation
 
-  * Offline entries should be added to tracker.
+Open the root directory in terminal and enter:
+
+```sh
+npm install
+```
+
+```sh
+npm start
+```
 
 ## User Story
 AS AN avid traveller
@@ -25,38 +34,12 @@ SO THAT my account balance is accurate when I am traveling
 Giving users a fast and easy way to track their money is important, but allowing them to access that information anytime is even more important. Having offline functionality is paramount to our applications success.
 
 
-## Acceptance Criteria
-GIVEN a user is on Budget App without an internet connection
-WHEN the user inputs a withdrawal or deposit
-THEN that will be shown on the page, and added to their transaction history when their connection is back online.
+## License
 
-- - -
+© 2020 Zachary Sadovszky
 
-## Commit Early and Often
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
-
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
-
-* Follow these guidelines for committing:
-
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
-
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
-
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
-
-  * Test your application before you commit to ensure functionality at every step in the development process
-
-* We would like you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-* You are required to submit the following:
-
-  * the URL to the deployed application
-
-  * the URL to the Github repository
-
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
